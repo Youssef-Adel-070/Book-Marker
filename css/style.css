@@ -1,0 +1,116 @@
+body{ 
+    background-color: #F7ECDE; 
+    
+} 
+::selection{ 
+    background-color:#FEC260;
+}
+
+.title{ 
+    font-size: 3.125rem; 
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    position: relative;
+    z-index: 2; 
+      
+      
+} 
+.title::before{ 
+    content: ''; 
+    width: 21%; 
+    height: 25%;  
+    background-color: #FEC260;
+    position: absolute; 
+    bottom:10px ; 
+    left: 40%; 
+    z-index: -1;
+    transition: .3s;
+
+} 
+.title:hover::before{ 
+    height: 30px;
+    
+} 
+.book_content{ 
+    border-top-style: dotted; 
+    border-bottom-style: dotted; 
+    
+} 
+.book_content h2 { 
+background: linear-gradient(90deg, rgba(64,165,91,1) 41%, rgba(176,171,73,1) 67%); 
+background-size: cover; 
+background-clip: text; 
+-webkit-background-clip: text; 
+color: transparent;  
+font-family: "Righteous", sans-serif;
+font-weight: 400;
+font-style: normal;
+ 
+  
+
+
+} 
+.addbtn{ 
+    background-color:  #BB4120; 
+    color: white; 
+    padding: 8px 30px; 
+    border: none; 
+    border-radius: 5px;
+} 
+@media screen and (max-width:1280px) {
+    .title::before{ 
+        content: ''; 
+        width: 25%; 
+        height: 25%;  
+        background-color: #FEC260;
+        position: absolute; 
+        bottom:10px ; 
+        left: 38%; 
+        z-index: -1;
+        transition: .3s;
+    }
+    
+}
+@media screen and (max-width:991px) {
+    .title::before{ 
+        content: ''; 
+        width: 35%; 
+        height: 25%;  
+        background-color: #FEC260;
+        position: absolute; 
+        bottom:10px ; 
+        left: 34%; 
+        z-index: -1;
+        transition: .3s;
+    
+} 
+}
+@media screen and (max-width:767px) {
+    .title::before{ 
+        content: ''; 
+        width: 41%; 
+        height: 25%;  
+        background-color: #FEC260;
+        position: absolute; 
+        bottom:10px ; 
+        left: 31%; 
+        z-index: -1;
+        transition: .3s;
+    
+} 
+}
+@media screen and (max-width:500px) {
+    .title::before{ 
+        content: ''; 
+        width: 50%; 
+        height: 25%;  
+        background-color: #FEC260;
+        position: absolute; 
+        bottom:10px ; 
+        left: 23%; 
+        z-index: -1;
+        transition: .3s;
+    
+} 
+}
